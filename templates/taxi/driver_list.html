@@ -6,7 +6,7 @@
     <ul>
       {% for driver in driver_list %}
         <li>{{ driver.username }}
-        {% if driver.user == current_user %}
+        {% if driver == current_user %}
         (Me)
         {% endif %}</li>
     {% endfor %}
